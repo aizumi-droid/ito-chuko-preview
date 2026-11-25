@@ -1,0 +1,20 @@
+.entry-page .contact-layout{max-width:1160px;gap:clamp(45px,7vw,100px)}
+.entry-aside h2{line-height:1.8}
+.entry-aside .editorial-link{margin-top:24px}
+.entry-aside .contact-help h2{font-size:17px}
+.entry-page .contact-form-column{min-width:0}
+.entry-page .form-heading{margin-bottom:35px}
+.entry-page .field :is(input,select,textarea){width:100%;min-width:0}
+.entry-page .field input::placeholder,.entry-page .field textarea::placeholder{opacity:.65}
+.entry-page .confirm-panel>h2{font:30px/1.7 var(--serif);margin:20px 0}
+.entry-page .confirm-panel>p{line-height:2}
+.entry-page .confirm-rows{margin-top:28px}
+.entry-page .confirm-rows dd{white-space:pre-wrap;overflow-wrap:anywhere}
+.entry-page .confirm-rows>div{grid-template-columns:120px minmax(0,1fr)}
+.entry-page .form-submit,.entry-page #entry-complete{background:var(--color-orange);color:var(--color-charcoal);border-color:var(--color-orange)}
+.entry-page .dialog-actions{display:flex;flex-wrap:wrap;gap:14px}
+.entry-page .button:focus-visible{outline:2px solid var(--color-orange);outline-offset:5px}
+.entry-complete{padding-block:30px!important}
+.entry-complete .button{margin-top:30px}
+@media(max-width:900px){.entry-page .contact-layout{grid-template-columns:1fr;gap:45px}.entry-page .contact-aside{position:static}}
+@media(max-width:600px){.entry-page .contact-section{padding-top:25px}.entry-page .confirm-panel>h2{font-size:24px}.entry-page .confirm-rows>div{grid-template-columns:82px minmax(0,1fr)}.entry-page .dialog-actions .button{width:100%;justify-content:center;min-height:54px}.entry-page .entry-aside .contact-help{margin-top:30px}}

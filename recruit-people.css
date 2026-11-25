@@ -1,0 +1,76 @@
+/* People first: portrait-led recruitment editorial. */
+.careers-nav>.wrap{grid-template-columns:repeat(6,1fr)}
+.careers-nav a{padding-inline:15px;gap:10px}
+.careers-interviews{padding:94px 0 82px;background:var(--color-white);scroll-margin-top:100px;--on-surface:var(--color-charcoal)}
+.interview-section-heading{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:end;margin-bottom:49px}
+.interview-section-heading .small-latin{font-size:9px;letter-spacing:.14em;color:var(--on-surface);margin-bottom:18px}
+.interview-section-heading h2{font:19px/1.5 var(--body);font-weight:500;margin:0}
+.interview-section-heading h2>span{display:block;font:clamp(46px,5.1vw,72px)/1 var(--latin);letter-spacing:-.045em;margin-bottom:16px;color:var(--on-surface)}
+.interview-section-intro{padding-bottom:3px}
+.interview-section-intro>p{font-size:13px;line-height:2.1;color:var(--on-surface);margin:0 0 19px}
+.interview-proposal-label{font-size:9px;letter-spacing:.04em;display:inline-block;border:1px solid currentColor;color:var(--on-surface);padding:5px 9px}
+.interview-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.interview-card{min-width:0}
+.interview-card>button{display:block;width:100%;height:100%;text-align:left;border:0;border-radius:0;padding:0;background:var(--color-white);color:var(--on-surface);cursor:pointer;font:inherit;--on-surface:var(--color-charcoal)}
+.interview-photo-wrap{position:relative;overflow:hidden}
+.interview-photo{aspect-ratio:.81;margin:0;overflow:hidden}
+.interview-photo .photo-window{transition:transform .6s cubic-bezier(.2,.7,.3,1)}
+.interview-photo-number{position:absolute;left:17px;top:14px;z-index:2;font:30px/1 var(--latin);color:var(--on-surface);text-shadow:none;pointer-events:none}
+.interview-photo-number>small{display:block;font:7px/1.5 var(--latin);letter-spacing:.13em;margin-top:7px}
+.interview-card-body{padding:24px 21px 18px}
+.interview-role{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:0 0 17px;font-size:10px}
+.interview-role>span{white-space:nowrap}
+.interview-role>small{font:8px var(--latin);letter-spacing:.05em;color:var(--on-surface)}
+.interview-card h3{font:19px/1.85 var(--serif);letter-spacing:.01em;margin:0 0 24px;min-height:70px}
+.interview-card-action{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:9px;border-top:1px solid currentColor;padding-top:15px}
+.interview-card-action i{display:grid;place-items:center;width:28px;height:28px;border:1px solid currentColor;border-radius:50%;font:20px/1 var(--latin);transition:background .2s,color .2s}
+.interview-card>button:hover .photo-window{transform:scale(1.035)}
+.interview-card>button:hover .interview-card-action i{background:var(--color-charcoal);color:var(--on-surface);--on-surface:var(--color-white)}
+.interview-card>button:focus-visible{outline:2px solid var(--color-orange);outline-offset:5px}
+.interview-disclosure{display:flex;gap:20px;align-items:baseline;margin:24px 0 0;font-size:9px;line-height:1.9;color:var(--on-surface)}
+.interview-disclosure>span{font:8px var(--latin);letter-spacing:.1em;white-space:nowrap;color:var(--on-surface)}
+.careers-work{background:var(--color-white);border-top:1px solid currentColor;--on-surface:var(--color-charcoal)}
+.careers-jobs{display:block;border-bottom:1px solid currentColor}
+.careers-job{display:grid;grid-template-columns:65px .9fr 1.45fr 92px;gap:28px;align-items:center;padding:35px 0;scroll-margin-top:110px}
+.careers-job-top{display:block;margin:0}
+.careers-job-top>span{font-size:35px;display:block;margin-bottom:10px}
+.careers-job-top>small{font-size:7px;letter-spacing:.04em;display:block}
+.careers-job h3{font-size:28px;margin:0}
+.careers-job-tags{font-size:9px;margin-top:15px;color:var(--on-surface)}
+.careers-job h4{font-size:13px;margin-bottom:12px}
+.careers-job-description>p{font-size:11px;line-height:2.1;color:var(--on-surface);max-width:430px}
+.careers-job-link{font-size:10px;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid currentColor}
+.careers-job-link>span{font:20px var(--latin)}
+.careers-job-link:hover{color:var(--on-surface)}
+#interview-dialog{width:min(1040px,calc(100% - 64px));max-height:calc(100svh - 56px);padding:0;border:0;background:var(--color-white);color:var(--on-surface);overflow:auto;overscroll-behavior:contain;--on-surface:var(--color-charcoal)}
+#interview-dialog::backdrop{background:var(--color-charcoal);backdrop-filter:blur(7px);--on-surface:var(--color-white)}
+.interview-dialog-close{position:sticky;top:15px;z-index:5;display:flex;align-items:center;justify-content:center;margin:15px 18px -55px auto;width:40px;height:40px;border:1px solid currentColor;border-radius:50%;background:var(--color-white);color:var(--on-surface);font:29px/1 var(--latin);cursor:pointer;--on-surface:var(--color-charcoal)}
+.interview-dialog-close:hover{background:var(--color-white);--on-surface:var(--color-charcoal)}
+.interview-dialog-close:focus-visible{outline:2px solid var(--color-orange);outline-offset:4px}
+.interview-dialog-toolbar{height:70px;display:flex;align-items:center;gap:28px;padding:0 80px 0 35px;border-bottom:1px solid currentColor;font:9px var(--latin);letter-spacing:.1em}
+.interview-dialog-toolbar>span:last-child{font:9px var(--body);letter-spacing:0;color:var(--on-surface)}
+.interview-dialog-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:0;align-items:start}
+.interview-dialog-aside{background:var(--color-white);padding:30px;position:sticky;top:70px;--on-surface:var(--color-charcoal)}
+.interview-dialog-photo{aspect-ratio:.81}
+.interview-dialog-aside>p{display:flex;align-items:center;justify-content:space-between;margin:22px 0 1px;font:11px var(--latin);letter-spacing:.07em;color:var(--on-surface)}
+.interview-dialog-aside>p>span{font:12px var(--body);color:var(--on-surface);letter-spacing:0}
+.interview-dialog-copy{padding:36px 37px 30px}
+.interview-dialog-copy>.small-latin{font-size:8px;letter-spacing:.1em;color:var(--on-surface)}
+.interview-dialog-copy>h2{font:31px/1.7 var(--serif);letter-spacing:.01em;margin:19px 0 23px;outline:none}
+.interview-dialog-lead{font-size:11px;line-height:2.1;color:var(--on-surface)}
+.interview-topics{margin:30px 0 22px}
+.interview-topics>h3{font-size:11px;font-weight:500;margin:0 0 13px;color:var(--on-surface)}
+.interview-topics>section{display:grid;grid-template-columns:27px 1fr;gap:16px;border-top:1px solid currentColor;padding:16px 0}
+.interview-topics>section:last-child{border-bottom:1px solid currentColor}
+.interview-topics>section>span{font:11px/1.8 var(--latin);color:var(--on-surface)}
+.interview-topics h4{font-size:12px;font-weight:500;margin:0 0 9px}
+.interview-topics p{font-size:10px;line-height:1.9;color:var(--on-surface);margin:0}
+.interview-dialog-note{font-size:9px;line-height:1.9;color:var(--on-surface);margin-bottom:20px}
+.interview-to-work{display:flex;justify-content:space-between;align-items:center;width:100%;border:0;background:var(--color-charcoal);color:var(--on-surface);padding:18px 20px;font:11px var(--body);cursor:pointer;--on-surface:var(--color-white)}
+.interview-to-work>span{font:20px var(--latin)}
+.interview-to-work:hover{background:var(--color-charcoal);--on-surface:var(--color-white)}
+@media(max-width:1100px){.careers-nav a{padding-inline:10px;font-size:10px;gap:7px}.interview-grid{gap:16px}.interview-card-body{padding:21px 16px 17px}.interview-role>small{font-size:7px}.interview-card h3{font-size:17px}.careers-job{grid-template-columns:50px .85fr 1.35fr 80px;gap:22px}.careers-job h3{font-size:24px}.interview-dialog-copy{padding:30px}.interview-dialog-copy>h2{font-size:27px}}
+@media(min-width:701px) and (max-width:900px){.interview-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.interview-photo{aspect-ratio:.97}.interview-card-body{padding:24px}.interview-card h3{font-size:23px;min-height:84px}.interview-role{font-size:12px}.interview-role>small{font-size:9px}.interview-section-intro>p{font-size:11px}.careers-nav a{gap:7px;padding-inline:8px;font-size:9px}.careers-nav small{font-size:7px}.careers-job{grid-template-columns:45px 1fr 1.45fr;gap:24px}.careers-job-link{grid-column:3;max-width:125px;justify-self:end;width:100%}.careers-job h4{font-size:12px}.interview-dialog-layout{grid-template-columns:.75fr 1.25fr}.interview-dialog-aside{padding:22px}.interview-dialog-copy{padding:28px}.interview-dialog-copy>h2{font-size:25px}.interview-dialog-aside>p{display:block;font-size:9px}.interview-dialog-aside>p>span{display:block;margin-top:10px}}
+@media(max-width:700px){.careers-nav a{padding-inline:16px;font-size:10px;gap:10px;min-width:140px}.careers-interviews{padding:62px 0 52px;scroll-margin-top:74px}.interview-section-heading{display:block;margin-bottom:31px}.interview-section-heading .small-latin{font-size:8px;margin-bottom:16px}.interview-section-heading h2{font-size:15px}.interview-section-heading h2>span{font-size:45px;margin-bottom:13px}.interview-section-intro{margin-top:23px}.interview-section-intro>p{font-size:11px;line-height:2.1;margin-bottom:15px}.interview-proposal-label{font-size:8px;padding:4px 7px}.interview-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 12px}.interview-photo{aspect-ratio:.77}.interview-photo-number{left:10px;top:10px;font-size:22px}.interview-photo-number>small{font-size:5px;margin-top:5px}.interview-card-body{padding:16px 11px 13px}.interview-role{display:block;font-size:9px;margin-bottom:12px}.interview-role>small{display:block;font-size:7px;margin-top:6px;letter-spacing:.07em}.interview-card h3{font:14px/1.9 var(--serif);min-height:78px;margin:0 0 14px}.interview-card-action{font-size:8px;gap:7px;padding-top:12px}.interview-card-action i{width:23px;height:23px;flex:none;font-size:16px}.interview-grid .photoshoot-photo figcaption.image-disclaimer{font-size:8px;padding:3px 4px;right:5px;bottom:5px}.interview-disclosure{display:block;font-size:8px;line-height:2;margin-top:21px}.interview-disclosure>span{font-size:7px;display:block;margin-bottom:7px}.careers-job{grid-template-columns:35px 1fr;gap:16px;padding:25px 0}.careers-job-top{grid-column:1;align-self:start;padding-top:3px}.careers-job-top>span{font-size:26px;margin-bottom:0}.careers-job-top>small{display:none}.careers-job-name{grid-column:2}.careers-job h3{font-size:24px}.careers-job-tags{font-size:8px;margin-top:11px}.careers-job-description{grid-column:2}.careers-job h4{font-size:11px;margin-bottom:9px}.careers-job-description>p{font-size:10px}.careers-job-link{grid-column:2;font-size:9px;width:110px;justify-self:end;padding:8px 0;margin-top:2px}
+#interview-dialog{width:calc(100% - 24px);max-height:calc(100svh - 24px)}.interview-dialog-close{top:10px;margin:10px 12px -46px auto;width:36px;height:36px}.interview-dialog-toolbar{height:58px;padding:0 60px 0 18px;gap:15px;font-size:8px}.interview-dialog-toolbar>span:last-child{font-size:8px}.interview-dialog-layout{display:block}.interview-dialog-aside{position:static;padding:18px 20px;display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:center}.interview-dialog-photo{aspect-ratio:.81}.interview-dialog-photo.photoshoot-photo figcaption.image-disclaimer{font-size:8px;padding:2px 3px;right:4px;bottom:4px}.interview-dialog-aside>p{display:block;font-size:10px;margin:0}.interview-dialog-aside>p>span{display:block;font-size:13px;margin-top:14px}.interview-dialog-copy{padding:25px 22px 23px}.interview-dialog-copy>h2{font-size:26px;margin:16px 0 20px}.interview-dialog-lead{font-size:11px}.interview-topics{margin:25px 0 20px}.interview-topics h4{font-size:11px}.interview-topics p{font-size:10px}.interview-dialog-note{font-size:8px}.interview-to-work{font-size:10px;padding:16px}.interview-dialog-copy>.small-latin{font-size:7px}}
+@media(prefers-reduced-motion:reduce){.interview-photo .photo-window,.interview-card-action i{transition:none}}

@@ -1,0 +1,31 @@
+/* Recruitment entrance: open white space, concise typography, a wide people photograph. */
+.recruit-entry-hero{background:#fafbf8;color:#282d25;padding:28px 0 0}
+.recruit-entry-hero>.wrap{max-width:1360px}
+.recruit-entry-topline{display:flex;justify-content:space-between;align-items:center;gap:30px}
+.recruit-entry-topline>p{display:flex;align-items:center;gap:19px;font:10px/1.6 var(--latin);letter-spacing:.15em}
+.recruit-entry-topline>p:before{content:'';width:6px;height:6px;background:#919d81;border-radius:50%;margin-right:2px}
+.recruit-entry-topline>p>span{font:10px var(--body);letter-spacing:.08em;color:#747d69;padding-left:19px;border-left:1px solid #c7cebe}
+.recruit-entry-topline .interior-breadcrumb{margin:0;font-size:8px;color:#8c9483;gap:15px}
+.recruit-entry-intro{display:grid;grid-template-columns:1.15fr 1fr;gap:8%;align-items:end;padding:40px 0 45px}
+.recruit-entry-intro>h1{font:clamp(47px,4.35vw,72px)/1.36 var(--serif);letter-spacing:.035em;margin:0;font-weight:400}
+.recruit-entry-intro>h1>span{display:inline-block;margin-left:.6em}
+.recruit-entry-copy{max-width:430px;justify-self:end;width:100%;padding-bottom:5px}
+.recruit-entry-copy>p{font-size:13px;line-height:2.1;letter-spacing:.045em;color:#69725f;margin-bottom:25px}
+.recruit-entry-actions{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px;align-items:stretch}
+.recruit-entry-actions>a{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:54px;font-size:11px;transition:background .2s,color .2s}
+.recruit-entry-actions>a>span{font:21px/1 var(--latin)}
+.recruit-entry-people{border-bottom:1px solid #b5c0a9;padding:12px 3px 12px 0}
+.recruit-entry-people:hover{color:#6e8657}
+.recruit-entry-jobs{padding:14px 21px;background:#2e3927;color:#fff}
+.recruit-entry-jobs:hover{background:#4a5c3d}
+.recruit-entry-visual{width:min(1560px,calc(100% - 64px));margin-inline:auto}
+.recruit-entry-photo{height:auto;aspect-ratio:2.45;background:#d1d8c9}
+.recruit-entry-photo .photo-window{height:100%;width:100%}
+.recruit-entry-photo-foot{display:flex;justify-content:space-between;align-items:center;gap:25px;padding:20px 0 24px;border-bottom:0;color:#808b74}
+.recruit-entry-photo-foot>span{font:8px var(--latin);letter-spacing:.12em}
+.recruit-entry-photo-foot>p{font-size:10px;letter-spacing:.12em;color:#6c765f}
+.recruit-entry-hero+.careers-nav{border-top:1px solid #d8dfd0}
+@media(min-width:1500px){.recruit-entry-intro{padding:45px 0 49px}.recruit-entry-copy>p{font-size:13px}.recruit-entry-actions>a{font-size:12px;min-height:58px}.recruit-entry-photo{aspect-ratio:2.65}}
+@media(min-width:701px) and (max-width:1000px){.recruit-entry-intro{gap:5%;grid-template-columns:1fr 1fr;padding:35px 0 37px}.recruit-entry-intro>h1{font-size:46px}.recruit-entry-copy>p{font-size:11px;line-height:2.1;margin-bottom:20px}.recruit-entry-actions{gap:16px;grid-template-columns:.7fr 1.3fr}.recruit-entry-actions>a{font-size:10px;gap:12px;min-height:50px}.recruit-entry-jobs{padding:13px 15px}.recruit-entry-visual{width:calc(100% - 40px)}.recruit-entry-photo{aspect-ratio:1.95}}
+@media(max-width:700px){.recruit-entry-hero{padding:21px 0 0}.recruit-entry-topline>p{font-size:8px;gap:11px}.recruit-entry-topline>p:before{width:5px;height:5px;margin-right:0}.recruit-entry-topline>p>span{font-size:8px;padding-left:11px}.recruit-entry-topline .interior-breadcrumb{font-size:7px;gap:9px}.recruit-entry-intro{display:block;padding:28px 0 28px}.recruit-entry-intro>h1{font-size:clamp(38px,10.7vw,48px);line-height:1.42;letter-spacing:.035em}.recruit-entry-intro>h1>span{margin-left:.6em}.recruit-entry-copy{max-width:none;padding:0;margin-top:23px}.recruit-entry-copy>p{font-size:12px;line-height:2.1;margin:0 0 23px;letter-spacing:.02em}.recruit-entry-actions{grid-template-columns:.75fr 1.25fr;gap:24px}.recruit-entry-actions>a{font-size:10px;min-height:48px;gap:15px}.recruit-entry-actions>a>span{font-size:20px}.recruit-entry-people{padding:11px 2px 11px 0}.recruit-entry-jobs{padding:13px 17px}.recruit-entry-visual{width:calc(100% - 32px)}.recruit-entry-photo{aspect-ratio:1.18;height:auto}.recruit-entry-photo-foot{padding:14px 0 18px;gap:15px}.recruit-entry-photo-foot>span{font-size:6px;letter-spacing:.06em}.recruit-entry-photo-foot>p{font-size:8px;letter-spacing:.03em}.recruit-entry-photo-foot>span:last-child{display:none}.recruit-entry-hero+.careers-nav a{padding-block:18px}}
+@media(prefers-reduced-motion:reduce){.recruit-entry-actions>a{transition:none}}

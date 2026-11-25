@@ -1,0 +1,28 @@
+/* All interface colors use these three brand tokens. Photographs keep their natural colors. */
+:root{--color-white:#FFFFFF;--color-charcoal:#242629;--color-orange:#E1794C;--on-surface:var(--color-charcoal);--ink:var(--color-charcoal);--paper:var(--color-white);--muted:var(--color-charcoal);--line:var(--color-charcoal);--copper:var(--color-orange);color-scheme:light}
+body{background:var(--color-white);color:var(--on-surface)}
+body[data-page="recruit"]{--ink:var(--color-charcoal);--paper:var(--color-white);--muted:var(--color-charcoal);--line:var(--color-charcoal);--copper:var(--color-orange);--lp-ink:var(--color-charcoal);--lp-accent:var(--color-orange);--lp-muted:var(--color-charcoal);--lp-line:var(--color-charcoal)}
+::selection{background:var(--color-orange);color:var(--color-charcoal)}
+input,select,textarea,button{accent-color:var(--color-orange);color:var(--on-surface)}
+input::placeholder,textarea::placeholder{color:var(--color-charcoal);opacity:1}
+body[data-page=home]:not(.is-scrolled):not(.menu-open) .site-header{--on-surface:var(--color-white);mix-blend-mode:screen}
+body[data-page=home]:not(.is-scrolled):not(.menu-open) .header-contact{background:transparent;--on-surface:var(--color-white)}
+body[data-page=home]:not(.is-scrolled):not(.menu-open) .header-contact:hover{background:var(--color-orange);--on-surface:var(--color-charcoal)}
+.about-cover,.about-cover .wrap,.photo-index,.photo-scene-label,.recruit-photo-title{--on-surface:var(--color-white)}
+.lp-hero,.foundry-hero,.recruit-panorama{--on-surface:var(--color-white)}
+.lp-job-photo:after{background:linear-gradient(180deg,rgba(36,38,41,.25),transparent 22%,transparent 63%,rgba(36,38,41,.72))}
+.lp-job-photo-index,.lp-job-photo figcaption{--on-surface:var(--color-white)}
+.lp-job-en,.lp-jobs .lp-job-en,.lp-job-en>span,.lp-jobs .lp-job-detail-label,.lp-jobs .lp-job-interest{color:var(--color-white)}
+.lp-job-detail li>span,.lp-jobs .lp-job-detail li>span,.lp-text-link>span,.lp-jobs .lp-text-link>span,.lp-footer-top>a:last-child>span,.contact-direction{color:var(--color-orange)}
+.lp-job-tabs>button:hover:not([aria-selected=true]),.filter-button:hover:not(.active){background:var(--color-white);--on-surface:var(--color-charcoal);box-shadow:inset 0 -3px var(--color-orange)}
+.lp-job-tabs>button[aria-selected=true]{box-shadow:inset 0 -3px var(--color-orange)}
+.lp-button-accent,.lp-mobile-cta>a:last-child,.button.copper{background:var(--color-orange);--on-surface:var(--color-charcoal)}
+.lp-button-accent:hover,.lp-mobile-cta>a:last-child:hover,.button.copper:hover{background:var(--color-charcoal);--on-surface:var(--color-white)}
+.lp-header-entry:hover,.lp-button-dark:hover,.header-contact:hover,.interview-to-work:hover{background:var(--color-orange);--on-surface:var(--color-charcoal)}
+.lp-home-link:hover,.lp-desktop-nav a:hover,.editorial-link:hover,.product-detail-download:hover{text-decoration:underline;text-underline-offset:4px}
+.interview-card>button:hover .interview-card-action i{background:var(--color-orange);--on-surface:var(--color-charcoal)}
+.interview-proposal-label,.lp-note,.interview-disclosure,.lp-source{color:var(--on-surface)}
+.lp-job-en>span,.lp-job-photo-index{font-weight:400}
+#interview-dialog::backdrop,#product-dialog::backdrop{background:var(--color-charcoal);backdrop-filter:none}
+.photoshoot-photo figcaption.image-disclaimer,.image-disclaimer,.lp-hero-photo>.image-disclaimer,.lp-job-photo figcaption .image-disclaimer{background:var(--color-charcoal)!important;color:var(--color-white)!important}
+.catalogue-aside .filter-button.active{box-shadow:inset 0 -3px var(--color-orange)}
